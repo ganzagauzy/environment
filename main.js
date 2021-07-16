@@ -11,6 +11,7 @@ function toggleMenu(){
     navigation.classList.toggle('active');
 }
 
+
 // Scroll reveal
 
 window.sr = ScrollReveal();
