@@ -354,7 +354,7 @@ header .navigation li a:hover {
 
 /* footer */
 footer {
-    padding: 7.9rem;
+    padding: 7.9rem 0;
     background-color: #232c33;
     top: 0;
     left: 0;
@@ -384,6 +384,7 @@ footer {
     overflow: hidden;
 }
 .footer-content h4 {
+    color: var(--secondary-font-color);
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 100;
@@ -399,8 +400,15 @@ footer {
 .footer-content-about p {
     line-height: 2;
 }
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .social-media h4 {
-    border-bottom: 2px solid var(--secondary-font-color);
+    color: var(--secondary-font-color);
+    border-bottom: 2px solid #fff;
     max-width: 200px;
 }
 .social-icons {
@@ -420,8 +428,19 @@ footer {
 .social-icons i:focus {
     color: var(--secondary-font-color);
 }
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .newsletter-container h4 {
-    border-bottom: 2px solid var(--secondary-font-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-font-color);
+    border-bottom: 2px solid #fff;
     max-width: 140px;
 }
 .newsletter-form {
