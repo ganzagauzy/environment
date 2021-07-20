@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environment</title>
+    <title>RECO</title>
     <link rel="stylesheet" href=
         "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
         integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
         crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Environment</a>
+        <a href="#" class="logo">RECO</a>
         <div class="menuToggle" onclick="toggleMenu();"></div>
-        <ul class="navigation" onclick="toggleMenu();">
+        <ul class="navigation" onclick="toggleMenu();" onclick="toggleActive();">
             <li><a href="#">Home</a></li>
             <li><a href="#about" onclick=>About</a></li>
-            <li><a href="#news" onclick=>News</a></li>
+            <li><a href="#vision" onclick=>Vision</a></li>
+            <li><a href="#mission" onclick=>Mission</a></li>
             <li><a href="#gallery" onclick=>Gallery</a></li>
             <li><a href="#more" onclick=>More</a></li>
             <li><a href="#contact" onclick=>Contact</a></li>
@@ -29,9 +31,9 @@
     <section class="hero" id="hero">
         <div class="container">
             <h2 class="sub-headline">
-                <span class="first-letter">G</span>ood
+                <span class="first-letter"></span>RECO
             </h2>
-            <h1 class="headline" style="color: #fff;">Environment</h1>
+            <h1 class="headline" style="color: #fff;">Rweru Environmental Concern</h1>
             <div class="headline-description">
                 <div class="separator">
                     <div class="line line-left"></div>
@@ -40,8 +42,8 @@
                     
                 </div>
                 <div class="single-animation">
-                    <h5 style="color: #fff;">Protect Environment, Protect yourself</h5>
-                    <a href="#" class="btn cta-btn">explore</a>
+                    <h5 style="color: #fff;">Protect Environment, Protect Your Self</h5>
+                    <a href="#about" class="btn cta-btn">explore</a>
                 </div>
             </div>
         </div>
@@ -60,9 +62,16 @@
                         <h1 class="headline headline-dark">Us</h1>
                         <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut doloremque corporis earum error iste vero dignissimos ipsum placeat rerum eum.
-                        Fugit voluptate a placeat ullam incidunt ab dolorem odit ipsa.
+                    <p>
+                        Rweru Environmental Concern is a community based organisation to protect
+                        environmental and water bodies while improving the life style of the 
+                        people around lac Rweru <br><br>
+                        Our work promotes policies to improve the economical and social well-being
+                        of people around the lac rweru. The Rweru Environmental Concern (RECO) brings
+                        together community leaders, civil organisationsand academics to seek solutions 
+                        to common problems of environmental protection, develop global standards,
+                        share experiences.
+                         
                     </p>
                     <a href="#about" class="btn body-btn">About Us</a>
                 </div>
@@ -74,24 +83,26 @@
     </section>
 
 
-    <!---->
+    <!--Vision-->
 
-    <section class="discover-menu" id="news">
+    <section class="discover-menu" id="vision">
         <div class="container">
             <div class="rest-info">
                 <div class="rest-desc animate-right">
                     <div class="global-headline">
                         <h2 class="sub-headline">
-                            <span class="first-letter">N</span>ews
+                            <span class="first-letter">O</span>ur
                         </h2>
-                        <h1 class="headline headline-dark">to know</h1>
+                        <h1 class="headline headline-dark">Vision</h1>
                         <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut doloremque corporis earum error iste vero dignissimos ipsum placeat rerum eum.
-                        Fugit voluptate a placeat ullam incidunt ab dolorem odit ipsa.
+                    <p>
+                        Our vision recognizes the environmental issues facing society such as 
+                        climate change, water bodies protection, environental pollution, and 
+                        destruction of the ecosystem as business risks for the communities and 
+                        commitment to solving these issues over the long term.
                     </p>
-                    <a href="#news" class="btn body-btn">more news</a>
+                    <a href="#news" class="btn body-btn">more</a>
                 </div>
                 <div class="image-group padding-right animate-left">
                     <img src="image/10.jpg" alt="">
@@ -102,8 +113,38 @@
             </div>
         </div>
     </section>
+    <!--Mission-->
 
-    <!---->
+    <section class="discover-menu" id="mission">
+        <div class="container">
+            <div class="rest-info">
+                <div class="rest-desc animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">O</span>ur
+                        </h2>
+                        <h1 class="headline headline-dark">Mission</h1>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>
+                        Rweru Environmental Concern have a mission to protect, restore and enhance
+                        environmental quality towards good public health, environmental integrity and 
+                        economic viability.
+                    </p>
+                    <a href="#news" class="btn body-btn">more</a>
+                </div>
+                <div class="image-group padding-right animate-left">
+                    <img src="image/15.jpg" alt="">
+                    <img src="image/10.jpg" alt="">
+                    <img src="image/11.jpg" alt="">
+                    <img src="image/9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Gallery-->
+
     <section class="perfect-blend between" id="gallery">
         <div class="container">
             <div class="global-headline">
@@ -137,33 +178,41 @@
         </div>
     </section>
 
-    <!---->
-    <section class="culinary-delight" id="more">
-        <div class="container">
-            <div class="rest-info">
-                <div class="rest-desc padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline">
-                            <span class="first-letter">M</span>ore 
-                        </h2>
-                        <h1 class="headline headline-dark">To know</h1>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut doloremque corporis earum error iste vero dignissimos ipsum placeat rerum eum.
-                        Fugit voluptate a placeat ullam incidunt ab dolorem odit ipsa.
-                    </p>
-                    <a href="#more" class="btn body-btn">more to know</a>
-                </div>
-                <div class="image-group">
-                    <img class="animate-top" src="image/2.jpg" alt="">
-                    <img class="animate-bottom" src="image/6.jpg" alt="">
-                </div>
+    <!--More-->
+
+    
+    <section class="service" id="more">
+        <div class="rest-desc animate-right">
+            <div class="global-headline">
+                <h2 class="sub-headline">
+                    <span class="first-letter">M</span>ore
+                </h2>
+                <h1 class="headline headline-dark">to know</h1>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                <p>Rweru Environmental Concern will work on the main environmental
+                    challenges facing Rwanda, which are :
+                </p>
             </div>
+            <ul>
+                <div class="animate-left">
+                    <li>Land scarcity</li>
+                    <li>Soil degradation and soil erosion</li>
+                    <li>Deforestation</li>
+                    <li>Climate change</li>
+                </div>
+                <div class="animate-right">
+                    <li>Loss of biodiversity</li>
+                    <li> Water pollution and access</li>
+                    <li>Urban pollution and natural resourcespressures</li>
+                    <li>Generation of hazardous and solid waste</li>
+                </div>
+            </ul>
+           
         </div>
     </section>
 
-    <!---->
+    
+    <!--Footer-->
 
     <footer>
         <div class="container" id="contact">
@@ -172,12 +221,12 @@
             </div>
             <div class="footer-content">
                 <div class="footer-content-about animate-top">
-                    <h4>ENVIRONMENT</h4>
+                    <h4>RECO</h4>
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis esse accusamus illum placeat at ad magnam dolores culpa nemo nostrum minus
-                        voluptatibus atque corrupti est eum obcaecati explicabo, soluta suscipit!
+                        Rweru Environmental Concern have a mission to protect, restore and enhance
+                        environmental quality towards good public health, environmental integrity and 
+                        economic viability.
                     </p>
                 </div>
                 <div class="footer-content-divider animate-bottom">

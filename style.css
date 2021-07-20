@@ -11,8 +11,8 @@
     box-sizing: border-box;
 }
 :root {
-    --main-font: 'Herr Von ', sans-serif;
-    --secondary-font: 'Poppins',cursive;
+    --main-font: 'Poppins',cursive;
+    --secondary-font: 'Cabin', sans-serif;
     --body-font: 'Cabin',sans-serif;
     --main-font-color:#252525;
     --secondary-font-color: #4187f6;
@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 section {
-    padding: 2.4rem 0;
+    padding: 2.4rem 5px;
     overflow: hidden;
 }
 img {
@@ -47,77 +47,6 @@ p {
     margin: 0 auto;
     padding: 0 2.4rem;
 }
-/* header */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10px;
-    z-index: 10000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-}
-
-header.sticky {
-    background: var(--secondary-font-color);
-    padding: 20px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
-}
-header .logo {
-    color: #fff;
-    font-weight: 700;
-    font-size: 3em;
-    text-decoration: none;
-}
-header .navigation {
-    display: none;
-}
-header .navigation.active {
-    width: 100%;
-    height: calc(100% - 70px);
-    position: fixed;
-    top: 70px;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #232c33;
-}
-header .navigation li {
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: 30px;
-}
-header .navigation li a {
-    color: #fff;
-    font-size: 2em; 
-}
-header .navigation li a:hover {
-    color: var(--secondary-font-color);
-}
-
-.menuToggle {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: url(image/menu1.png);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-.menuToggle.active {
-    background: url(image/close1.png);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
 
 /* hero */
 .hero {
@@ -131,12 +60,12 @@ header .navigation li a:hover {
 }
 .hero h5 {
     color: #fff;
-    font-size: 8rem;
+    font-size: 28rem;
     margin-top: 10px;
 }
 .sub-headline {
     font-size: 5.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     font-family: var(--secondary-font);
     color: var(--secondary-font-color);
     font-weight: 100;
@@ -152,7 +81,8 @@ header .navigation li a:hover {
 }
 .headline {
     color: #111;
-    font-size: 2.5rem;
+    margin-top: 10px;
+    font-size: 1.8rem;
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 900;
@@ -168,8 +98,8 @@ header .navigation li a:hover {
 }
 .line {
     width: 100%;
-    min-width: 14rem;
-    height: .25rem;
+    min-width: 1.5rem;
+    height: .30rem;
     background-color: #111;
     position: relative;
     opacity: 0;
@@ -210,7 +140,7 @@ header .navigation li a:hover {
 }
 .headline-description h5 {
     color: #111;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 100;
     text-transform: uppercase;
     margin-bottom: 1.2rem;
@@ -268,6 +198,29 @@ header .navigation li a:hover {
     line-height: 1.6;
     margin-bottom: 2.4rem;
 }
+
+.rest-desc ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    left: 5px;
+}
+.rest-desc ul li {
+    font-size: 18px;
+    margin: 10px 10px;
+}
+.rest-desc ul .animate-left {
+    padding-left: 15px;
+}
+.rest-desc .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .body-btn {
     color: var(--secondary-font-color);
     position: relative;
@@ -354,7 +307,7 @@ header .navigation li a:hover {
 
 /* footer */
 footer {
-    padding: 7.9rem 0;
+    padding: 7.9rem 5px;
     background-color: #232c33;
     top: 0;
     left: 0;
@@ -475,64 +428,7 @@ footer {
 @media screen and (min-width: 900px){
     section {
         padding: 7.9rem;
-    }
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 30px 70px;
-        z-index: 10000;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.5s;
-    }
-    header.sticky {
-        background: var(--secondary-font-color);
-        padding: 20px 50px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
-    }
-    header .logo {
-        color: #fff;
-        font-weight: 700;
-        font-size: 4em;
-        text-decoration: none;
-    }
-    header .navigation {
-        position: relative;
-        display: flex;
-    }
-    header .navigation li {
-        list-style: none;
-        margin-left: 30px;
-    }
-    header .navigation li a {
-        text-decoration: none;
-        font-weight: 300;
-        color: #fff;
-        font-size: 1.5em;
-    }
-    header .navigation li a:hover {
-        color: #fff;
-        border-bottom: 2px solid #fff;
-    }
-    .menuToggle {
-        display: none;
-        height: 0;
-    }
-    .menuToggle.active {
-        display: none;
-        visibility: hidden;
-        height: 0;
-    }
-    /*
-    header .navigation.active {
-        display: none;
-        visibility: hidden;
-        height: 0;
-    }
-    */
+    }/*
     .active {
         position: relative;
     }
@@ -544,7 +440,7 @@ footer {
         background-color: #111;
         left: 0;
         bottom: -3px;
-    }
+    }*/
     .sub-headline {
         font-size: 6rem;
     }
@@ -557,11 +453,17 @@ footer {
         margin-top: 1rem;
     }
     .line {
+        width: 100%;
+        min-width: 37rem;
+        height: .30rem;
         max-width: 0rem;
         margin-bottom: 1.5rem;
     }
     .asterisk {
         margin-bottom: 1.5rem;
+    }
+    .single-animation h5 {
+        font-size: 1rem;
     }
     .rest-info {
         display: flex;
@@ -569,6 +471,9 @@ footer {
     }
     .rest-info > div {
         flex: 1;
+    }
+    .rest-info-img {
+        padding-top: 150px;
     }
     .perfect-blend {
         min-height: 120vh;
@@ -618,6 +523,18 @@ footer {
         height: 100%;
         object-fit: cover;
     }
+
+    .rest-desc ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .rest-desc .center {
+        margin-bottom: 0;
+    }
+
     .footer-content {
         max-width: 77.5rem;
         margin: auto;
