@@ -209,10 +209,10 @@ p {
 }
 .rest-desc ul li {
     font-size: 18px;
-    margin: 10px 10px;
+    margin: 10px;
 }
 .rest-desc ul .animate-left {
-    padding-left: 15px;
+    padding-left: 20px;
 }
 .rest-desc .center {
     display: flex;
