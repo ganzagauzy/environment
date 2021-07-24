@@ -1,7 +1,7 @@
 
 
 .circles img {
-    margin-right: -100px;
+    padding-right: -100px;
     padding-left: 0;
     top: 0;
     width: 400px;
@@ -30,4 +30,15 @@
     margin-left: 0;
     font-size: 1.8rem;
     line-height: 1.5;
+}
+
+@media (max-width:480px){
+    .circles img {
+        padding-right: 0;
+    }
+    .circles p {
+        padding-left: 0;
+
+        
+    }
 }
