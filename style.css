@@ -52,8 +52,10 @@ p {
 .hero {
     width: 100%;
     height: 100vh;
-    background: #232c33;
     display: flex;
+    background: url(image/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -98,7 +100,7 @@ p {
 }
 .line {
     width: 100%;
-    min-width: 1.5rem;
+    min-width: 1.9rem;
     height: .30rem;
     background-color: #111;
     position: relative;
@@ -399,9 +401,21 @@ footer {
     border-bottom: 2px solid #fff;
     max-width: 140px;
 }
-.newsletter-form {
+form  input {
     width: 100%;
-    min-width: 100px;
+    min-width: 230px;
+    border-radius: 5px;
+    border-top: none;
+    border: none;
+}
+button .fas {
+    padding-left: 100%;
+    min-width: 50px;
+    color: #4187f6;
+    font-size: 20px;
+}
+.newsletter-form {
+    
     height: 30px;
     position: relative;
     display: flex;
@@ -409,23 +423,25 @@ footer {
 }
 .newsletter input {
     width: 100%;
-    max-width: 30rem;
+    min-width: 200px;
     height: 40px;
-    padding: 1rem;
-    border-radius: .4rem;
+    margin-left: 10px;
+    padding: 1rem 5px;
+    border-radius: 5px;
 }
 .newsletter-btn {
     background-color: transparent;
     border: none;
-    color: var(--main-font-color);
+    color: var(--secondary-font-color);
     cursor: pointer;
     font-size: 1.6rem;
-    padding: 1px .3rem;
+    padding: 1px .1rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 14rem;
 }
+
  
 /* media */
 @media screen and (min-width: 900px){
@@ -457,7 +473,7 @@ footer {
     }
     .line {
         width: 100%;
-        min-width: 37rem;
+        min-width: 34.5rem;
         height: .30rem;
         max-width: 0rem;
         margin-bottom: 1.5rem;
@@ -542,6 +558,10 @@ footer {
         max-width: 77.5rem;
         margin: auto;
     }
+    .footer-content-about h4 {
+        font-size: 30px;
+    }
+   
     .footer-content-about {
         max-width: 51.3rem;
         margin: 0 auto 5.4rem ;
@@ -550,11 +570,46 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-    .social-media,
+    .social-media
+     {
+        width: 100%;
+        max-width: 27.4rem;
+        margin: 0 1rem;
+    }
     .newsletter-form {
         width: 100%;
-        max-width: 27.3rem;
-        margin: 0 1rem;
+        max-width: 0;
+    }
+    .newsletter-form input {
+        border: none;
+    }
+    form {
+        margin: 0;
+    }
+
+    form  input {
+        width: 100%;
+        min-width: 250px;
+        border-radius: 5px;
+        border-top: none;
+    }
+    form  input:focus {
+        border: none;
+    }
+    form  input::placeholder {
+        border: none;
+        color: #111;
+    }
+    form button i {
+        padding-right: 0;
+       
+        display: block;
+    }
+    button .fas {
+        padding-left: 100%;
+        min-width: 50px;
+        color: #4187f6;
+        font-size: 20px;
     }
     .social-icons {
         opacity: 1;

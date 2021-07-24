@@ -10,6 +10,26 @@ function toggleMenu(){
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
 }
+//bg
+
+function changeBg() {
+
+    const images = [
+        'url("image/bg2.jpg")',
+        'url("image/bg4.jpg")',
+        'url("image/bg3.jpg")',
+        
+    ]
+
+    const hero = document.querySelector('.hero')
+
+    const bg = images[Math.floor(Math.random() * images.length)];
+
+    hero.style.backgroundImage = bg ;
+
+}
+
+setInterval(changeBg, 2000)
 
 
 // Scroll reveal

@@ -1,0 +1,33 @@
+
+
+.circles img {
+    margin-right: -100px;
+    padding-left: 0;
+    top: 0;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.circles h2 {
+    margin: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.circles p {
+    padding-left: 50px;
+    text-align: center;
+    right: -50px;
+    margin: 5px 0;
+    margin-left: 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
