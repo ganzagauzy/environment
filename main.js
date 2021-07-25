@@ -29,7 +29,7 @@ function changeBg() {
 
 }
 
-setInterval(changeBg, 2000)
+setInterval(changeBg, 1500)
 
 
 // Scroll reveal
