@@ -61,7 +61,7 @@ header .navigation  li a:hover {
 @media (max-width:900px) {
     header {
         z-index: 100;
-        background: none;
+        background: rgba(0, 0, 0, 0.5);
     }
     header,
     header.sticky {
@@ -115,7 +115,7 @@ header .navigation  li a:hover {
 @media (max-width:480px){
     header {
         z-index: 100;
-        background: none;
+        background: rgba(0, 0, 0, 0.5);
     }
     header,
     header.sticky {
