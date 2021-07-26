@@ -60,6 +60,7 @@ header .navigation  li a:hover {
 
 @media (max-width:900px) {
     header {
+        top: 0;
         z-index: 100;
         background: rgba(0, 0, 0, 0.5);
     }
@@ -114,6 +115,7 @@ header .navigation  li a:hover {
 }
 @media (max-width:480px){
     header {
+        top: 0;
         z-index: 100;
         background: rgba(0, 0, 0, 0.5);
     }

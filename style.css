@@ -507,6 +507,9 @@ button .fas {
     .rest-info-img {
         padding-top: 150px;
     }
+    .rest-info p {
+        line-height: 2;
+    }
     .perfect-blend {
         min-height: 120vh;
     }
