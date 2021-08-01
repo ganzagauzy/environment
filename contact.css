@@ -4,7 +4,7 @@ hr {
     padding-bottom: 0;
     width: 90%;
     border: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
     margin: 20px auto;
 }
 .copyright {
@@ -12,7 +12,7 @@ hr {
     font-size: 14px;
 }
 .copyright span {
-    color: #4187f6;
+    color: #1e9b2a;
 }
 
 .showcase-form {
@@ -64,7 +64,8 @@ hr {
     border: 0;
 }
 .showcase-form input[type='submit']:hover{
-    background: #4187f6;
+    background: #012705;
+    color: #fff
 }
 
 

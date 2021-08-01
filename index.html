@@ -14,17 +14,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="galery.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">RECO</a>
+        <a href="#" class="logo"><img src="image/logo.jpg" alt=""></a>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation" onclick="toggleMenu();" onclick="toggleActive();">
             <li><a href="#">Home</a></li>
             <li><a href="#about" onclick=>About</a></li>
-            <li><a href="#vision" onclick=>Vision</a></li>
-            <li><a href="#mission" onclick=>Mission</a></li>
+            <li><a href="#vision" onclick=>Vision/Mission</a></li>
+            <li><a href="#operations" onclick=>Operation Areas</a></li>
             <li><a href="#gallery" onclick=>Gallery</a></li>
+            <li><a href="#community" onclick=>Communities Awareness</a></li>
             <li><a href="#more" onclick=>More</a></li>
             <li><a href="#contact" onclick=>Contact</a></li>
         </ul>
@@ -67,9 +69,9 @@
                     <p>
                         Rweru Environmental Concern is a community based organisation to protect
                         environmental and water bodies while improving the life style of the 
-                        people around lac Rweru <br><br>
+                        people around lake Rweru <br><br>
                         Our work promotes policies to improve the economical and social well-being
-                        of people around the lac rweru. The Rweru Environmental Concern (RECO) brings
+                        of people around the lake rweru. The Rweru Environmental Concern (RECO) brings
                         together community leaders, civil organisations and academics to seek solutions 
                         to common problems of environmental protection, develop global standards,
                         share experiences.
@@ -110,7 +112,7 @@
     <section class="discover-menu" id="vision">
         <div class="container">
             <div class="rest-info">
-                <div class="rest-desc animate-right">
+                <div class="rest-desc animate-left">
                     <div class="global-headline">
                         <h2 class="sub-headline">
                             <span class="first-letter">O</span>ur
@@ -124,17 +126,8 @@
                         destruction of the ecosystem as business risks for the communities and 
                         commitment to solving these issues over the long term.
                     </p>
-                    <a href="#news" class="btn body-btn">more</a>
+                    <!--<a href="#news" class="btn body-btn">more</a>-->
                 </div>
-               
-            </div>
-        </div>
-    </section>
-    <!--Mission-->
-
-    <section class="discover-menu" id="mission">
-        <div class="container">
-            <div class="rest-info">
                 <div class="rest-desc animate-right">
                     <div class="global-headline">
                         <h2 class="sub-headline">
@@ -148,13 +141,38 @@
                         environmental quality towards good public health, environmental integrity and 
                         economic viability.
                     </p>
-                    <a href="#news" class="btn body-btn">more</a>
+                  
                 </div>
-              
                
             </div>
         </div>
     </section>
+    <!--Mission-->
+
+    <!--Operations-->
+    <section class="service" id="operations">
+        <div class="rest-desc animate-right">
+            <div class="global-headline">
+                <h2 class="sub-headline">
+                    <span class="first-letter">O</span>peration
+                </h2>
+                <h1 class="headline headline-dark">Areas</h1>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+               
+            </div>
+            <ul>
+                <div class="animate-left">
+                    <li>Protection of watersheds</li>
+                    <li>Access to safe and clean water </li>
+                    <li>Environmental conservation</li>
+                    <li>Advocacy for good policies to protect the environment</li>
+                </div>
+            </ul>
+        </div>
+    </section>
+          
+
+   
 
     <!--Gallery-->
 
@@ -170,16 +188,103 @@
                     <h1 class="headline headline-dark" style="color: #fff;">Gallery</h1>
                 </div>
             </div>
-            <div class="body">
-                <div class="box">
-                    <span style="--i:1;"><img src="image/bg1.jpg" alt=""></span>
-                    <span style="--i:2;"><img src="image/bg2.jpg" alt=""></span>
-                    <span style="--i:3;"><img src="image/bg3.jpg" alt=""></span>
-                    <span style="--i:4;"><img src="image/bg4.jpg" alt=""></span>
+            <div class="ddd">
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/bg1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/bg2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/bg3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/bg4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box2">
+                        <div class="imgBx">
+                            <img src="image/bg1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+              
+
+            </div>
+           
+           
+           
+        </div>
+    </section>
+
+    <!--com-->
+    <section class="discover-menu" id="community">
+        <div class="container">
+            <div class="rest-info">
+                <div class="rest-desc animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">C</span>ommunities
+                        </h2>
+                        <h1 class="headline headline-dark">Awareness </h1>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>
+                        Rweru Environmental Concern (RECO) interacts with the Local peoples on how to protect environmental. 
+                        And set up new project. <br>
+                        Rweru Environmental Concern (RECO) is run by a group of proactive,
+                         experienced and trained personal to help communities to
+                          developer small project. it is necessary to raise environmental awareness,
+                           educate young people on the issue, as well as assume responsibility for
+                            the care and protection of the environment.
+                        
+                    </p>
                     
-                    <span style="--i:6;"><img src="image/bg2.jpg" alt=""></span>
-                    
-                    <span style="--i:8;"><img src="image/bg4.jpg" alt=""></span>
                 </div>
             </div>
         </div>
@@ -228,7 +333,7 @@
             </div>
             <div class="footer-content">
                 <div class="footer-content-about animate-top">
-                    <h4>RECO</h4>
+                    <h4><span>RECO</span> </h4>
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     <p>
                         Rweru Environmental Concern have a mission to protect, restore and enhance

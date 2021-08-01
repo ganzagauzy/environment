@@ -12,18 +12,25 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 50px;
+    padding: 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
     z-index: 1000;
 }
-header.sticky {
+.navigation {
+    padding: 0 10px;
+}
+
+header.sticky  {
     z-index: 100000;
-    background: #4187f6;
-    padding: 10px 30px;
+    background: #012705;
+    padding: 0;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+header.sticky .navigation {
+    background: none;
 }
 header.sticky .logo,
 header.sticky .navigation  li a {
@@ -33,13 +40,17 @@ header.sticky .navigation  li a {
     color: #fff;
     font-size: 1.5em;
 }
-header .logo {
-    color: #fff;
-    font-weight: 700;
-    font-size: 3em;
-    text-decoration: none;
+header .logo img {
+    padding-top: 90px;
+    top: 100px;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 header .navigation  {
+   
     position: relative;
     display: flex;
 }
@@ -60,12 +71,18 @@ header .navigation  li a:hover {
 
 @media (max-width:900px) {
     header {
+        padding: 0 0;
         top: 0;
         z-index: 100;
-        background: rgba(0, 0, 0, 0.5);
+       
     }
-    header,
-    header.sticky {
+    .navigation {
+        padding-right: 5px;
+    }
+    
+   
+   
+    header .navigation.sticky {
         padding: 15px 40px;
         z-index: 1000000;
     }
@@ -74,9 +91,9 @@ header .navigation  li a:hover {
     }
     header .navigation.active {
         width: 100%;
-        height: calc(100% - 60px);
+        height: calc(100% - 135px);
         position: fixed;
-        top: 60px;
+        top: 135px;
         left: 0;
         display: flex;
         justify-content: center;
@@ -84,17 +101,18 @@ header .navigation  li a:hover {
         flex-direction: column;
         background: #232c33;
     }
+  
     header .navigation li {
         margin-left: 0;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     header .navigation li a {
         font-size: 2em;
         color: #fff;
     }
-
-
+    
     .menuToggle {
+        padding-right: 5px;
         position: relative;
         width: 40px;
         height: 40px;
@@ -117,13 +135,30 @@ header .navigation  li a:hover {
     header {
         top: 0;
         z-index: 100;
-        background: rgba(0, 0, 0, 0.5);
+        padding: 0 0;
     }
     header,
-    header.sticky {
-        padding: 15px 10px;
+    header .navigation.sticky {
         z-index: 1000000;
     }
+    header .logo img {
+        padding-top: 60px;
+        top: 100px;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    
 
 }
+
+
+
+
+
+
+
+
 
